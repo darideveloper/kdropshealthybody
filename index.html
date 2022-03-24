@@ -50,6 +50,9 @@
         <symbol id="svg-close" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
         </symbol>
+        <symbol id="svg-arrow" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z"/>
+        </symbol>
     </svg>
 
     <!-- 
@@ -125,7 +128,30 @@
         <!-- Hero -->
         <section class="hero">
             <div class="gallery">
-    
+                <div class="buttons">
+                    <button class="left">
+                        <svg>
+                            <use xlink:href="#svg-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="right">
+                        <svg>
+                            <use xlink:href="#svg-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <div class="wrapper-img">
+                            <img src="imgs/gallery 1.jpg" alt="gallery image 1">    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper-img">
+                            <img src="imgs/gallery 2.jpg" alt="gallery image 1">    
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="products-cards">
                 <a class="product-card"></a>
@@ -183,7 +209,9 @@
     </footer>
 
 
+    <script type="text/javascript" src="code/index.js"></script>
     <script type="text/javascript" src="code/header.js"></script>
+    <script type="text/javascript" src="code/hero.js"></script>
 
     <!-- Aos imports -->
     <!-- <script type="text/javascript" src="code/aos.js"></script> -->

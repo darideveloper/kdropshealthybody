@@ -53,8 +53,12 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
-  height: 100px;
+  height: auto;
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 header .inner-header {
   width: 100%;
@@ -78,12 +82,13 @@ header .inner-header nav ul {
 header .inner-header nav ul li {
   cursor: pointer;
   opacity: 0.8;
+  transition-duration: 0.3s;
 }
 header .inner-header nav ul li:hover {
   opacity: 1;
 }
 header .inner-header nav ul li a, header .inner-header nav ul li button {
-  padding: 25px;
+  padding: 10px 25px;
   color: #fff;
   display: inline-block;
   background: none;
@@ -114,6 +119,11 @@ header .inner-header button.menu svg {
   }
 }
 @media screen and (max-width: 950px) {
+  header {
+    background-color: rgba(0, 0, 0, 0);
+    position: initial;
+    margin: 15px 0;
+  }
   header .inner-header button.menu {
     display: block;
   }
@@ -178,6 +188,67 @@ header .inner-header button.menu svg {
   header .inner-header {
     padding: 0 15px;
   }
+}
+
+section.hero {
+  width: 100%;
+  height: auto;
+}
+section.hero .gallery {
+  position: relative;
+}
+section.hero .gallery .buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.hero .gallery .buttons button {
+  background: none;
+  border: none;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  padding: 15px;
+  transition-duration: 0.3s;
+  opacity: 0.3;
+}
+section.hero .gallery .buttons button:hover {
+  opacity: 0.6;
+}
+section.hero .gallery .buttons button:disabled {
+  opacity: 0.3;
+}
+section.hero .gallery .buttons button svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+section.hero .gallery .buttons button.left svg {
+  transform: rotateZ(180deg);
+}
+section.hero .gallery ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+section.hero .gallery ul li {
+  transition-duration: 0.5s;
+}
+section.hero .gallery ul li .wrapper-img {
+  width: 100vw;
+  height: auto;
+}
+section.hero .gallery ul li .wrapper-img img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

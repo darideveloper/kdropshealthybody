@@ -3,8 +3,12 @@ header
     align-items: center
     justify-content: center
     background-color: rgba(black, 0.2)
-    height: 100px
+    height: auto
     width: 100%
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
 
     .inner-header
         width: 100%
@@ -28,12 +32,14 @@ header
             li
                 cursor: pointer
                 opacity: 0.8
+                transition-duration: calc($transition_duration*0.3)
+                
                 &:hover
                     opacity: 1
 
 
                 a, button
-                    padding: 25px
+                    padding: 10px 25px
                     color: $color_b
                     display: inline-block
                     background: none
@@ -59,12 +65,18 @@ header
                 height: calc(100% - 10px)
                 fill: $color_b
                 
-        @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1400px)
+        .inner-header
             nav ul
                 margin-right: 0
 
-        @media screen and (max-width: 950px)
-            
+    @media screen and (max-width: 950px)
+        background-color: rgba(black, 0)
+        position: initial
+        margin: 15px 0
+
+        .inner-header
+
             button.menu
                 display: block
 
@@ -74,7 +86,7 @@ header
                 right: 0
                 top: 0
                 z-index: 1
-                transition-duration: 1s
+                transition-duration: $transition_duration
 
                 &.collapsed
                     right: -350px
@@ -128,7 +140,8 @@ header
                             height: 30px
                             fill: $color_b
 
-        @media screen and (max-width:600px)
+    @media screen and (max-width:600px)
+        .inner-header
             padding: 0 15px
 
 
