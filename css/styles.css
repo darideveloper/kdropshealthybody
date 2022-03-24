@@ -1,0 +1,85 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.wrapper-img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-img img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+p.small {
+  font-size: 16px;
+}
+
+.hide {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: #8C0468;
+}
+
+.regular-width {
+  max-width: 1200px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+header .inner-header {
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .inner-header .logo {
+  width: 150px;
+}
+header .inner-header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: -25px;
+}
+header .inner-header nav ul li a, header .inner-header nav ul li button {
+  padding: 25px;
+  color: white;
+  opacity: 0.8;
+  display: inline-block;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+header .inner-header nav ul li a:hover, header .inner-header nav ul li button:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */
