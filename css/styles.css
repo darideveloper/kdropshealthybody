@@ -50,9 +50,11 @@ header {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
   height: 100px;
+  border: 1px solid white;
 }
 header .inner-header {
   width: 100%;
+  height: 100%;
   padding: 0px 50px;
   display: flex;
   align-items: center;
@@ -70,7 +72,7 @@ header .inner-header nav ul {
 }
 header .inner-header nav ul li a, header .inner-header nav ul li button {
   padding: 25px;
-  color: white;
+  color: #fff;
   opacity: 0.8;
   display: inline-block;
   background: none;
@@ -80,6 +82,45 @@ header .inner-header nav ul li a, header .inner-header nav ul li button {
 }
 header .inner-header nav ul li a:hover, header .inner-header nav ul li button:hover {
   opacity: 1;
+}
+header .inner-header button.menu {
+  background: #8C0468;
+  border: none;
+  width: 70px;
+  height: 70px;
+  display: none;
+  opacity: 0.8;
+  border-radius: 30%;
+}
+header .inner-header button.menu svg {
+  padding: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  fill: #fff;
+}
+@media screen and (max-width: 1400px) {
+  header .inner-header nav ul {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .inner-header button.menu {
+    display: block;
+  }
+  header .inner-header nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .inner-header button.menu {
+    width: 50px;
+    height: 50px;
+  }
+  header .inner-header button.menu svg {
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
