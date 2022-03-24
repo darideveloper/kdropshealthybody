@@ -38,6 +38,18 @@
         <symbol id="svg-menu" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
         </symbol>
+        <symbol id="svg-eye-dropper" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M17.542 13.147l-7.455-6.667 1.334-1.49c.822.736 2.087.666 2.822-.159l3.503-3.831c.593-.663 1.414-1 2.238-1 1.666 0 3.016 1.358 3.016 2.996 0 .723-.271 1.435-.78 2.005l-3.503 3.83c-.735.824-.666 2.087.158 2.825l-1.333 1.491zm-4.314-1.175l-7.791 8.65c-.314.352-1.322.323-1.853.557.172-.554.048-1.538.362-1.89l7.791-8.651-1.491-1.333-7.9 8.794c-1.277 1.423-.171 2.261-1.149 4.052-.135.244-.197.48-.197.698 0 .661.54 1.151 1.141 1.151.241 0 .492-.079.724-.256 1.733-1.332 2.644-.184 3.954-1.647l7.9-8.792-1.491-1.333z"/>
+        </symbol>
+        <symbol id="svg-delivery" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M3 18h-2c-.552 0-1-.448-1-1v-2h15v-9h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.121-.728 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-6c0 1.656-1.344 3-3 3s-3-1.344-3-3zm3-1.2c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm12 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-4-2.8h-14v-10c0-.552.448-1 1-1h12c.552 0 1 .448 1 1v10zm3-6v3h4.715l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.42z"/>
+        </symbol>
+        <symbol id="svg-question" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/>
+        </symbol>
+        <symbol id="svg-close" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
+        </symbol>
     </svg>
 
     <!-- 
@@ -71,15 +83,29 @@
             <div class="logo wrapper-img">
                 <img src="./imgs/logo.png" alt="logo de la empresa">
             </div>
-            <nav class="menu">
+            <nav class="menu collapsed">
                 <ul>
-                    <li>
-                        <a href="">Productos</a>
+                    <li class="close">
+                        <svg class="icon">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
                     </li>
-                    <li>
+                    <li class="menu-option">
+                        <svg class="icon">
+                            <use xlink:href="#svg-eye-dropper"></use>
+                        </svg>
+                        <a href="#products">Productos</a>
+                    </li>
+                    <li class="menu-option">
+                        <svg class="icon">
+                            <use xlink:href="#svg-delivery"></use>
+                        </svg>
                         <a href="">Envíos</a>
                     </li>
-                    <li>
+                    <li class="menu-option">
+                        <svg class="icon">
+                            <use xlink:href="#svg-question"></use>
+                        </svg>
                         <a href="">Pregntas frecuentes</a>
                     </li>
                     <li>
@@ -117,8 +143,8 @@
         <section class="about"></section>
 
         <!-- Membership -->
-        <section class="products">
-            <article class="product"></article>
+        <section class="products" id="products" style="height: 50px; width: 50px; margin-top: 1000px;">
+            <article class="product">Sample text</article>
             <article class="product"></article>
             <article class="product"></article>
             <article class="product"></article>
@@ -157,7 +183,7 @@
     </footer>
 
 
-    <script type="text/javascript" src="code/index.js"></script>
+    <script type="text/javascript" src="code/header.js"></script>
 
     <!-- Aos imports -->
     <!-- <script type="text/javascript" src="code/aos.js"></script> -->
