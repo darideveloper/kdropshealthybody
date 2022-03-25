@@ -46,10 +46,12 @@ a {
 
 .regular-width {
   max-width: 1200px;
+  padding: 0 2%;
 }
 
 h1, h2 {
   text-align: center;
+  padding: 0 2%;
 }
 h1 span, h2 span {
   color: #8C0468;
@@ -444,12 +446,31 @@ section.hero .gallery ul li .wrapper-img img.fade {
 .checker .right .alert {
   display: none;
 }
+@media screen and (max-width: 750px) {
+  .checker {
+    grid-template-columns: 1fr;
+  }
+  .checker .left {
+    display: block;
+  }
+  .checker .left svg {
+    transform: rotateZ(90deg);
+    margin: 0 auto;
+  }
+  .checker .right {
+    margin-top: 30px;
+  }
+  .checker .right input, .checker .right button {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 80%;
+  }
+}
 
 .about.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  gap: 5%;
   align-items: center;
   justify-content: center;
 }
@@ -460,6 +481,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   border-radius: 30px;
   box-shadow: inset 0px 5px 4px 0px rgba(255, 255, 255, 0.45), inset 0px 0px 40px 2px #8C0468, inset 0px 10px 10px 2px #8C0468, inset 0px -10px 10px 4px #8C0468;
   padding: 40px 30px;
+  margin: 5%;
 }
 .about.cards .card svg {
   fill: white;
@@ -476,6 +498,9 @@ section.hero .gallery ul li .wrapper-img img.fade {
 @media screen and (max-width: 1220px) {
   .about.cards {
     grid-template-columns: 600px;
+  }
+  .about.cards .card {
+    margin: 2.5%;
   }
 }
 @media screen and (max-width: 650px) {

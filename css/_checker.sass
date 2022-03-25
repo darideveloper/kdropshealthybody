@@ -53,3 +53,20 @@
 
         .alert
             display: none
+
+    @media screen and (max-width: 750px)
+        grid-template-columns: 1fr
+
+        .left
+            display: block
+            svg
+                transform: rotateZ(90deg)
+                margin: 0 auto
+
+        .right
+            margin-top: 30px
+
+            input, button
+                margin: 0 auto
+                margin-top: 15px
+                width: 80%
