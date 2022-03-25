@@ -479,7 +479,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   .checker .right {
     margin-top: 30px;
   }
-  .checker .right input, .checker .right button {
+  .checker .right input, .checker .right button, .checker .right .alert {
     margin: 0 auto;
     margin-top: 15px;
     width: 80%;
