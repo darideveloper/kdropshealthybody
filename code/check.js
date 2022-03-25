@@ -1,10 +1,16 @@
+// Nodes
 const check_input = document.querySelector (".checker input")
 const check_btn = document.querySelector (".checker button")
 const check_alert = document.querySelector (".checker .alert")
 const check_p_correct = document.querySelector (".checker p.correct")
 const check_p_wrong = document.querySelector (".checker p.wrong")
+const check_p_wrong_span = document.querySelector (".checker p.wrong span")
+
+// Range validation
 const checki_start_num = 2531100 
 const checki_end_num = 2534150
+
+// Control variables
 var check_numer
 
 // Detect update in input
@@ -63,6 +69,7 @@ function show_check_alert (number_valid) {
     } else {
         check_alert.classList.add ("wrong")
         check_p_wrong.classList.remove ("hide")
+        check_p_wrong_span.innerHTML = check_numer
     }
 }
 
