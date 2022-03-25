@@ -52,7 +52,31 @@
             width: 180px
 
         .alert
+            margin-top: 20px
+            padding: 10px 20px
             display: none
+            border-radius: 30px
+
+            &.correct
+                background-color: rgba($color_a, 0.1)
+                display: block
+            
+            &.wrong
+                background-color: rgba(red, 0.1)
+                display: block
+
+
+            p
+                span
+                    font-style: italic
+                
+                a
+                    color: white
+                    font-weight: bold
+
+            p.correct
+            
+            p.wrong
 
     @media screen and (max-width: 750px)
         grid-template-columns: 1fr

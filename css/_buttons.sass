@@ -15,6 +15,7 @@
     border-radius: 15px
     font-weight: bold
     border: none
+    color: $color_a
     @include btn-shadow($color_c)
     
 
@@ -22,7 +23,7 @@
         @include btn-shadow($color_a)
 
 
-    &:disabled, &.disabled
+    &:disabled, &.disabled, &:disabled:hover, &.disabled:hover
         box-shadow: none
         text-decoration: none
         opacity: 0.8

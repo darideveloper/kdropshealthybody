@@ -243,10 +243,15 @@
             </div>
             <div class="right">
                 <input type="number">
-                <button id="check-btn" class="btn onblack">Buscar</button>
-                <section id="alert" role="alert"> 
-                    <p class="alert">
-                        CÓDIGO 45465654 NO ENCONTRADO EN LA BASE DE DATOS, TU PRODUCTO PODRÍA SER FALSIFICADO, CONSULTA A NUESTRO ASESOR 
+                <button class="btn onblack" disabled>Buscar</button>
+                <section class="alert" role="alert"> 
+                    <p class="correct hide">
+                        ¡TU PRODUCTO ES ORIGINAL!
+                    </p>
+                    <p class="wrong hide">
+                        CÓDIGO 
+                        <span>123456</span>
+                        NO ENCONTRADO EN LA BASE DE DATOS, TU PRODUCTO PODRÍA SER FALSIFICADO, CONSULTA A NUESTRO ASESOR 
                         <a href="">
                             3017505865
                         </a>
@@ -301,6 +306,7 @@
     <script type="text/javascript" src="code/index.js"></script>
     <script type="text/javascript" src="code/header.js"></script>
     <script type="text/javascript" src="code/hero.js"></script>
+    <script type="text/javascript" src="code/check.js"></script>
 
     <!-- Aos imports -->
     <!-- <script type="text/javascript" src="code/aos.js"></script> -->
