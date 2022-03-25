@@ -55,12 +55,19 @@ h1, h2 {
 h1 {
   font-size: 60px;
   text-align: center;
+  margin: 0;
+  margin-top: 100px;
 }
 h1 span {
   color: #8C0468;
   font-weight: bold;
   border-bottom: 5px solid #8C0468;
   display: inline-block;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -368,13 +375,15 @@ section.hero .gallery ul li .wrapper-img img.fade {
   opacity: 0;
 }
 
-.about {
+.about.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   gap: 5%;
+  align-items: center;
+  justify-content: center;
 }
-.about .card {
+.about.cards .card {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -382,7 +391,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   box-shadow: inset 0px 5px 4px 0px rgba(255, 255, 255, 0.45), inset 0px 0px 40px 2px #8C0468, inset 0px 10px 10px 2px #8C0468, inset 0px -10px 10px 4px #8C0468;
   padding: 40px 30px;
 }
-.about .card svg {
+.about.cards .card svg {
   fill: white;
   width: 40px;
   height: 40px;
@@ -390,9 +399,19 @@ section.hero .gallery ul li .wrapper-img img.fade {
   -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
   filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
 }
-.about .card h3 {
+.about.cards .card h3 {
   margin: 0;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1220px) {
+  .about.cards {
+    grid-template-columns: 600px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about.cards {
+    grid-template-columns: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
