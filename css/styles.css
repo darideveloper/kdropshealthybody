@@ -290,6 +290,10 @@ section.hero .gallery ul li .content a.btn {
     box-shadow: none;
   }
 }
+section.hero .gallery ul li .content p {
+  margin: 0;
+  padding: 0;
+}
 section.hero .gallery ul li .content.slide1 {
   margin-left: 45%;
   margin-top: 4%;
@@ -298,10 +302,6 @@ section.hero .gallery ul li .content.slide1 .logo {
   width: 40%;
   height: auto;
   margin-top: 10%;
-}
-section.hero .gallery ul li .content.slide1 p {
-  margin: 0;
-  padding: 0;
 }
 section.hero .gallery ul li .content.slide1 p:nth-child(2) {
   font-size: 2vw;
@@ -313,6 +313,23 @@ section.hero .gallery ul li .content.slide1 p:nth-child(3) {
 }
 section.hero .gallery ul li .content.slide1 p:nth-child(4) {
   font-size: 4.4vw;
+  font-weight: bold;
+}
+section.hero .gallery ul li .content.slide2 {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+section.hero .gallery ul li .content.slide2 .logo {
+  width: 24%;
+  height: auto;
+  margin-top: 10%;
+}
+section.hero .gallery ul li .content.slide2 p:nth-child(2) {
+  font-size: 2vw;
+  margin-top: 1%;
+}
+section.hero .gallery ul li .content.slide2 p:nth-child(3) {
+  font-size: 3.4vw;
   font-weight: bold;
 }
 section.hero .gallery ul li .wrapper-img {
