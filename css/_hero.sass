@@ -24,6 +24,7 @@ section.hero
                 padding: 15px
                 transition-duration: calc($transition_duration*0.3)
                 opacity: 0.3
+                z-index: 1
 
                 &:hover
                     opacity: 0.6
@@ -49,13 +50,59 @@ section.hero
             align-items: center
             justify-content: flex-start
             width: 100%
+            overflow-x: hidden
+            -ms-overflow-style: none
+            scrollbar-width: none
+
+            &::-webkit-scrollbar
+                display: none
+            
 
             li
                 transition-duration: calc($transition-duration*0.5)
+                width: 100vw
 
-                // &:first-child
-                //     margin-left: -100vw
-                    
+                .content
+                    position: absolute
+                    top: 0
+                    left: 0
+
+                    a.btn
+                        margin-top: 2%
+                        display: inline-block
+                        font-size: 1.5vw
+                        padding: 0.7vw 1.4vw
+
+                        @media screen and (max-width: 950px)
+                            box-shadow: none
+
+                    &.slide1
+                        margin-left: 45%
+                        margin-top: 4%
+
+                        .logo
+                            width: 40%
+                            height: auto
+                            margin-top: 10%
+
+                        p
+                            margin: 0
+                            padding: 0
+
+                            &:nth-child(2)
+                                font-size: 2vw
+                                margin-top: 5%
+                            
+                            &:nth-child(3)
+                                font-size: 3.4vw
+                                font-weight: bold
+
+                            &:nth-child(4)
+                                font-size: 4.4vw
+                                font-weight: bold
+
+                        
+                        
 
                 .wrapper-img
                     width: 100vw
@@ -65,5 +112,5 @@ section.hero
                         width: 100%
                         height: auto
 
-                        // &.fade
-                        //     opacity: 0
+                        &.fade
+                            opacity: 0

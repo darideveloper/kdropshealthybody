@@ -1,0 +1,23 @@
+.btn
+    background-color: $color_b
+    padding: 10px 20px
+    font-size: 20px
+    border-radius: 15px
+    font-weight: bold
+    border: none
+    box-shadow: 4px 4px 6px 2px rgba($color_c, 0.4)
+
+    &:hover
+        box-shadow: 4px 4px 6px 2px rgba($color_c, 1)
+        text-decoration: underline
+
+    &:active
+        box-shadow: 4px 4px 6px 2px rgba($color_c, 0.4) inset 
+
+    &:disabled, &.disabled
+        box-shadow: none
+        text-decoration: none
+        opacity: 0.8
+        cursor: default
+        color: rgba($color_a, 0.5)
+        

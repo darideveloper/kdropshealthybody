@@ -48,11 +48,35 @@ a {
   max-width: 1200px;
 }
 
+.btn {
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
+}
+.btn:hover {
+  box-shadow: 4px 4px 6px 2px black;
+  text-decoration: underline;
+}
+.btn:active {
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4) inset;
+}
+.btn:disabled, .btn.disabled {
+  box-shadow: none;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: default;
+  color: rgba(140, 4, 104, 0.5);
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   height: auto;
   width: 100%;
   position: absolute;
@@ -216,6 +240,7 @@ section.hero .gallery .buttons button {
   padding: 15px;
   transition-duration: 0.3s;
   opacity: 0.3;
+  z-index: 1;
 }
 section.hero .gallery .buttons button:hover {
   opacity: 0.6;
@@ -238,9 +263,57 @@ section.hero .gallery ul {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+section.hero .gallery ul::-webkit-scrollbar {
+  display: none;
 }
 section.hero .gallery ul li {
   transition-duration: 0.5s;
+  width: 100vw;
+}
+section.hero .gallery ul li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.hero .gallery ul li .content a.btn {
+  margin-top: 2%;
+  display: inline-block;
+  font-size: 1.5vw;
+  padding: 0.7vw 1.4vw;
+}
+@media screen and (max-width: 950px) {
+  section.hero .gallery ul li .content a.btn {
+    box-shadow: none;
+  }
+}
+section.hero .gallery ul li .content.slide1 {
+  margin-left: 45%;
+  margin-top: 4%;
+}
+section.hero .gallery ul li .content.slide1 .logo {
+  width: 40%;
+  height: auto;
+  margin-top: 10%;
+}
+section.hero .gallery ul li .content.slide1 p {
+  margin: 0;
+  padding: 0;
+}
+section.hero .gallery ul li .content.slide1 p:nth-child(2) {
+  font-size: 2vw;
+  margin-top: 5%;
+}
+section.hero .gallery ul li .content.slide1 p:nth-child(3) {
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+section.hero .gallery ul li .content.slide1 p:nth-child(4) {
+  font-size: 4.4vw;
+  font-weight: bold;
 }
 section.hero .gallery ul li .wrapper-img {
   width: 100vw;
@@ -249,6 +322,9 @@ section.hero .gallery ul li .wrapper-img {
 section.hero .gallery ul li .wrapper-img img {
   width: 100%;
   height: auto;
+}
+section.hero .gallery ul li .wrapper-img img.fade {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
