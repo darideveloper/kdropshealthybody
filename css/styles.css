@@ -278,6 +278,7 @@ section.hero .gallery ul li .content {
   position: absolute;
   top: 0;
   left: 0;
+  transition-duration: 1s;
 }
 section.hero .gallery ul li .content a.btn {
   margin-top: 2%;
@@ -297,6 +298,9 @@ section.hero .gallery ul li .content p {
 section.hero .gallery ul li .content.slide1 {
   margin-left: 45%;
   margin-top: 4%;
+}
+section.hero .gallery ul li .content.slide1 .logo, section.hero .gallery ul li .content.slide1 p, section.hero .gallery ul li .content.slide1 a {
+  opacity: 0;
 }
 section.hero .gallery ul li .content.slide1 .logo {
   width: 40%;
