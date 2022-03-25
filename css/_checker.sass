@@ -1,0 +1,55 @@
+.checker
+    display: grid
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    grid-template-columns: repeat(2, 1fr)
+
+    .left
+        display: flex
+        align-items: center
+        justify-content: center
+
+        h3
+            font-size: 30px
+            text-align: center
+        
+        svg
+            fill: $color_b
+            width: 30px
+            height: 30px
+            margin: 20px
+
+    .right
+        display: flex
+        flex-direction: column
+
+        input
+            font-size: 25px
+            padding: 10px 15px
+            border: none
+            outline: none
+            width: 80%
+            background-color: rgba($color_a, 0.2)
+            color: $color_b
+            margin-bottom: 15px
+
+            &:focus
+                border: none
+                outline: none
+                background-color: rgba($color_a, 0.4)
+                border-bottom: 5px solid rgba($color_a, 0.5)
+
+            // Disable buttons
+            &::-webkit-outer-spin-button, &::-webkit-inner-spin-button 
+                -webkit-appearance: none
+                margin: 0
+                
+            &[type=number] 
+                -moz-appearance: textfield
+        
+        button
+            width: 180px
+
+        .alert
+            display: none

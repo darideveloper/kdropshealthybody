@@ -51,18 +51,18 @@ a {
 h1, h2 {
   text-align: center;
 }
+h1 span, h2 span {
+  color: #8C0468;
+  font-weight: bold;
+  border-bottom: 5px solid #8C0468;
+  display: inline-block;
+}
 
 h1 {
   font-size: 60px;
   text-align: center;
   margin: 0;
   margin-top: 100px;
-}
-h1 span {
-  color: #8C0468;
-  font-weight: bold;
-  border-bottom: 5px solid #8C0468;
-  display: inline-block;
 }
 @media screen and (max-width: 800px) {
   h1 {
@@ -73,6 +73,10 @@ h1 span {
 h2 {
   font-size: 40px;
   margin-top: 100px;
+}
+
+h3 {
+  font-style: italic;
 }
 
 .btn {
@@ -90,6 +94,16 @@ h2 {
 }
 .btn:active {
   box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4) inset;
+}
+.btn.onblack {
+  box-shadow: 4px 4px 6px 2px rgba(140, 4, 104, 0.4);
+}
+.btn.onblack:hover {
+  box-shadow: 4px 4px 6px 2px #8c0468;
+  text-decoration: underline;
+}
+.btn.onblack:active {
+  box-shadow: 4px 4px 6px 2px rgba(140, 4, 104, 0.4) inset;
 }
 .btn:disabled, .btn.disabled {
   box-shadow: none;
@@ -373,6 +387,62 @@ section.hero .gallery ul li .wrapper-img img {
 }
 section.hero .gallery ul li .wrapper-img img.fade {
   opacity: 0;
+}
+
+.checker {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.checker .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checker .left h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.checker .left svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+.checker .right {
+  display: flex;
+  flex-direction: column;
+}
+.checker .right input {
+  font-size: 25px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  width: 80%;
+  background-color: rgba(140, 4, 104, 0.2);
+  color: #fff;
+  margin-bottom: 15px;
+}
+.checker .right input:focus {
+  border: none;
+  outline: none;
+  background-color: rgba(140, 4, 104, 0.4);
+  border-bottom: 5px solid rgba(140, 4, 104, 0.5);
+}
+.checker .right input::-webkit-outer-spin-button, .checker .right input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.checker .right input[type=number] {
+  -moz-appearance: textfield;
+}
+.checker .right button {
+  width: 180px;
+}
+.checker .right .alert {
+  display: none;
 }
 
 .about.cards {
