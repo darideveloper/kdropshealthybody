@@ -7,6 +7,7 @@ const checki_start_num = 2531100
 const checki_end_num = 2534150
 var check_numer
 
+// Detect update in input
 check_input.addEventListener ("input", function (e) {
     check_numer = check_input.value
 
@@ -17,16 +18,29 @@ check_input.addEventListener ("input", function (e) {
     }
 } )
 
+// Detect enter key in input
+check_input.addEventListener ("keyup", function (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+        validate_check_number () 
+    }
+})
+
+// Detect click in submit button
 check_btn.addEventListener ("click", function (e) {
+    validate_check_number ()  
+})
+
+function validate_check_number () {
     // Validate number
     let number_valid = false
-    if (check_numer >= checki_start_num && check_numer <= 2534150) {
-        number_valid = true
-    }
-
-    show_check_alert (number_valid)
+    if (check_numer) {
+        if (check_numer >= checki_start_num && check_numer <= 2534150) {
+            number_valid = true
+        }
     
-})
+        show_check_alert (number_valid)
+    }
+}
 
 function toggle_check_button (active) {
     // Activate or deactive button
