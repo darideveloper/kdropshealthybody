@@ -76,3 +76,24 @@ h2
 h3
     font-style: italic
 
+.cards
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+
+
+    .card
+        border-radius: 30px
+        box-shadow: inset 0px 5px 4px 0px rgba($color_b, .45), inset 0px 0px 40px 2px $color_a, inset 0px 10px 10px 2px $color_a, inset 0px -10px 10px 4px $color_a
+        padding: 40px 30px
+        margin: 5%
+
+    @media screen and (max-width: 1220px)     
+        grid-template-columns: 600px   
+        .card
+            margin: 2.5%
+
+    @media screen and (max-width: 650px)
+        grid-template-columns: 90%

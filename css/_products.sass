@@ -1,0 +1,52 @@
+.products
+
+    .card
+        padding: 0
+        overflow: hidden
+        width: 360px
+        height: 640px
+        background-position: center
+        background-size: 100% 100%
+        background-repeat: no-repeat
+        transition-duration: 1s
+        cursor: pointer
+
+        &.product1
+            background-image: url("../imgs/product 1 card.jpg")
+
+        &.product2
+            background-image: url("../imgs/product 2 card.jpg")
+        
+        &.product3
+            background-image: url("../imgs/product 3 card.jpg")
+        
+        &.product4
+            background-image: url("../imgs/product 4 card.jpg")
+
+        &.product5
+            background-image: url("../imgs/product 5 card.jpg")
+
+        &.product6
+            background-image: url("../imgs/product 6 card.jpg")
+
+
+        &:hover
+            background-size: 105% 105%
+
+    @media screen and (max-width: 1220px)
+        grid-template-columns: repeat(2, 350px)
+
+        .card
+            width: auto
+            margin: 4%
+
+    @media screen and (max-width: 820px)
+        grid-template-columns: 90%
+        gap: 0px
+
+        .card
+            margin: 2.5%
+            width: 280px
+            height: calc(280px * 640 / 360)
+            margin-left: auto
+            margin-right: auto
