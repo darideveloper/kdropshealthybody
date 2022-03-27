@@ -3,8 +3,35 @@
 
     .card
         text-align: center
+        height: 240px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
 
         svg
             width: 70px
+            min-width: 70px
             height: 70px
             fill: $color_b
+
+    @media screen and (max-width: 1000px)
+        grid-template-columns: 70%
+
+        .card
+            flex-direction: row
+            height: auto
+
+            svg
+                margin-right: 40px
+
+    @media screen and (max-width: 550px)
+        grid-template-columns: 90%
+
+        .card
+
+            svg
+                margin-right: 10px
+
+    
+

@@ -531,7 +531,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   margin-bottom: 30px;
 }
 
-.products .card.btn {
+.products .card {
   padding: 0;
   overflow: hidden;
   width: 360px;
@@ -542,25 +542,25 @@ section.hero .gallery ul li .wrapper-img img.fade {
   transition-duration: 1s;
   cursor: pointer;
 }
-.products .card.btn.product1 {
+.products .card.product1 {
   background-image: url("../imgs/product 1 card.jpg");
 }
-.products .card.btn.product2 {
+.products .card.product2 {
   background-image: url("../imgs/product 2 card.jpg");
 }
-.products .card.btn.product3 {
+.products .card.product3 {
   background-image: url("../imgs/product 3 card.jpg");
 }
-.products .card.btn.product4 {
+.products .card.product4 {
   background-image: url("../imgs/product 4 card.jpg");
 }
-.products .card.btn.product5 {
+.products .card.product5 {
   background-image: url("../imgs/product 5 card.jpg");
 }
-.products .card.btn.product6 {
+.products .card.product6 {
   background-image: url("../imgs/product 6 card.jpg");
 }
-.products .card.btn:hover {
+.products .card:hover {
   background-size: 105% 105%;
 }
 .products .wrapper-modals {
@@ -651,7 +651,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
 }
 @media screen and (max-width: 1220px) {
   .products {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 390px);
   }
   .products .card {
     width: auto;
@@ -677,11 +677,37 @@ section.hero .gallery ul li .wrapper-img img.fade {
 }
 .buy .card {
   text-align: center;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .buy .card svg {
   width: 70px;
+  min-width: 70px;
   height: 70px;
   fill: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .buy {
+    grid-template-columns: 70%;
+  }
+  .buy .card {
+    flex-direction: row;
+    height: auto;
+  }
+  .buy .card svg {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .buy {
+    grid-template-columns: 90%;
+  }
+  .buy .card svg {
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
