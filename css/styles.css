@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #020203;
+  background-color: #181818;
   max-width: 100vw;
   overflow-x: hidden;
   color: #fff;
@@ -528,7 +528,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   margin-bottom: 30px;
 }
 
-.products .card {
+.products .card.btn {
   padding: 0;
   overflow: hidden;
   width: 360px;
@@ -539,26 +539,88 @@ section.hero .gallery ul li .wrapper-img img.fade {
   transition-duration: 1s;
   cursor: pointer;
 }
-.products .card.product1 {
+.products .card.btn.product1 {
   background-image: url("../imgs/product 1 card.jpg");
 }
-.products .card.product2 {
+.products .card.btn.product2 {
   background-image: url("../imgs/product 2 card.jpg");
 }
-.products .card.product3 {
+.products .card.btn.product3 {
   background-image: url("../imgs/product 3 card.jpg");
 }
-.products .card.product4 {
+.products .card.btn.product4 {
   background-image: url("../imgs/product 4 card.jpg");
 }
-.products .card.product5 {
+.products .card.btn.product5 {
   background-image: url("../imgs/product 5 card.jpg");
 }
-.products .card.product6 {
+.products .card.btn.product6 {
   background-image: url("../imgs/product 6 card.jpg");
 }
-.products .card:hover {
+.products .card.btn:hover {
   background-size: 105% 105%;
+}
+.products .wrapper-modals {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 2;
+}
+.products .wrapper-modals .modal {
+  border: 1px solid red;
+  width: 80%;
+  height: 80%;
+  margin: 0;
+  background-color: #181818;
+}
+.products .wrapper-modals .modal .close {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: right;
+  padding: 10px 0;
+}
+.products .wrapper-modals .modal .close svg {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+}
+.products .wrapper-modals .modal .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.products .wrapper-modals .modal .content .left .wrapper-img {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.products .wrapper-modals .modal .content .left a {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 120px;
+  text-align: center;
+  display: block;
+}
+.products .wrapper-modals .modal .content .right {
+  overflow-y: scroll;
+  height: 90%;
+  max-height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.products .wrapper-modals .modal .content .right::-webkit-scrollbar {
+  display: none;
 }
 @media screen and (max-width: 1220px) {
   .products {
