@@ -587,6 +587,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   width: 100%;
   text-align: right;
   padding: 10px 0;
+  cursor: pointer;
 }
 .products .wrapper-modals .modal .close svg {
   width: 15px;
@@ -599,7 +600,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   height: 100%;
 }
 .products .wrapper-modals .modal .content .left .wrapper-img {
-  width: 70%;
+  width: 75%;
   max-width: 680px;
   height: auto;
   margin: 0 auto;
