@@ -717,12 +717,11 @@ section.hero .gallery ul li .wrapper-img img.fade {
   margin-top: 100px;
 }
 .whatsapp a {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   display: block;
+  margin: 0 auto;
+  padding: 0;
 }
 .whatsapp a h2, .whatsapp a h3 {
   color: #fff;
@@ -730,13 +729,14 @@ section.hero .gallery ul li .wrapper-img img.fade {
   margin: 0;
   padding: 0;
   transition-duration: 0.5s;
-  padding-left: 5%;
+  padding-left: 50px;
+  display: inline-block;
 }
 .whatsapp a h3 {
-  padding-top: 8%;
+  padding-top: 110px;
 }
 .whatsapp a h2 {
-  padding-top: 0.5%;
+  padding-top: 10px;
 }
 .whatsapp a svg {
   width: 0;
