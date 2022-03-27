@@ -75,6 +75,7 @@
                 .left
                     .wrapper-img
                         width: 70%
+                        max-width: 680px
                         height: auto
                         margin: 0 auto
                         border-radius: 30px
@@ -90,7 +91,6 @@
                 .right
                     overflow-y: scroll
                     height: 90%
-                    max-height: 100% 
 
                     // Hide scroll bar
                     -ms-overflow-style: none
@@ -99,6 +99,23 @@
                         display: none
 
 
+
+    @media screen and (max-width: 1300px)
+        .wrapper-modals
+            .modal
+
+                .content
+                    display: block
+                    overflow-y: scroll
+                    height: 90%
+
+                    .left
+                        .wrapper-img
+                            width: 90%
+
+                    .right
+                        overflow-y: visible
+                        height: auto
 
 
     @media screen and (max-width: 1220px)

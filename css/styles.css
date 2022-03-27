@@ -600,6 +600,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
 }
 .products .wrapper-modals .modal .content .left .wrapper-img {
   width: 70%;
+  max-width: 680px;
   height: auto;
   margin: 0 auto;
   border-radius: 30px;
@@ -615,12 +616,25 @@ section.hero .gallery ul li .wrapper-img img.fade {
 .products .wrapper-modals .modal .content .right {
   overflow-y: scroll;
   height: 90%;
-  max-height: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .products .wrapper-modals .modal .content .right::-webkit-scrollbar {
   display: none;
+}
+@media screen and (max-width: 1300px) {
+  .products .wrapper-modals .modal .content {
+    display: block;
+    overflow-y: scroll;
+    height: 90%;
+  }
+  .products .wrapper-modals .modal .content .left .wrapper-img {
+    width: 90%;
+  }
+  .products .wrapper-modals .modal .content .right {
+    overflow-y: visible;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1220px) {
   .products {
