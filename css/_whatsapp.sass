@@ -1,0 +1,61 @@
+.whatsapp
+    width: 100%
+    height: 300px
+    position: relative
+    margin-top: 100px
+
+    a
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: block 
+
+        h2, h3
+            color: $color_b
+            text-align: left
+            margin: 0
+            padding: 0
+            transition-duration: .5s
+            padding-left: 5%
+        
+        h3
+            padding-top: 8%
+
+        h2
+            padding-top: 0.5%
+
+        svg
+            width: 0
+            height: 0
+            fill: $color_b
+            transition-duration: .5s
+
+        
+
+        &:hover
+            h3
+                color: $color_a
+
+            svg
+                width: 30px
+                height: 30px
+
+            
+
+
+    &::before
+
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        opacity: 0.5
+        content: ""
+        background-image: url("../imgs/whatsapp.jpg")
+        z-index: -1

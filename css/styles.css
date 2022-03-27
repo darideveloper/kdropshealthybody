@@ -710,4 +710,60 @@ section.hero .gallery ul li .wrapper-img img.fade {
   }
 }
 
+.whatsapp {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-top: 100px;
+}
+.whatsapp a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.whatsapp a h2, .whatsapp a h3 {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  transition-duration: 0.5s;
+  padding-left: 5%;
+}
+.whatsapp a h3 {
+  padding-top: 8%;
+}
+.whatsapp a h2 {
+  padding-top: 0.5%;
+}
+.whatsapp a svg {
+  width: 0;
+  height: 0;
+  fill: #fff;
+  transition-duration: 0.5s;
+}
+.whatsapp a:hover h3 {
+  color: #8C0468;
+}
+.whatsapp a:hover svg {
+  width: 30px;
+  height: 30px;
+}
+.whatsapp::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  content: "";
+  background-image: url("../imgs/whatsapp.jpg");
+  z-index: -1;
+}
+
 /*# sourceMappingURL=styles.css.map */
