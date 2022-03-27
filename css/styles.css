@@ -81,6 +81,11 @@ h3 {
   font-style: italic;
 }
 
+.glow-icon {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -520,8 +525,6 @@ section.hero .gallery ul li .wrapper-img img.fade {
   width: 40px;
   height: 40px;
   margin-right: 25px;
-  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
-  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.7));
 }
 .about.cards .card h3 {
   margin: 0;
@@ -667,6 +670,18 @@ section.hero .gallery ul li .wrapper-img img.fade {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.buy {
+  grid-template-columns: repeat(4, 1fr);
+}
+.buy .card {
+  text-align: center;
+}
+.buy .card svg {
+  width: 70px;
+  height: 70px;
+  fill: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
