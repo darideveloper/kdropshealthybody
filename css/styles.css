@@ -629,6 +629,9 @@ section.hero .gallery ul li .wrapper-img img.fade {
 .products .wrapper-modals .modal .content .right::-webkit-scrollbar {
   display: none;
 }
+.products .wrapper-modals .modal .content .right i {
+  color: #8C0468;
+}
 @media screen and (max-width: 1300px) {
   .products .wrapper-modals .modal .content {
     display: block;
