@@ -581,6 +581,12 @@ section.hero .gallery ul li .wrapper-img img.fade {
   margin: 0;
   background-color: #181818;
 }
+.products .wrapper-modals .modal h3 {
+  font-size: 34px;
+}
+.products .wrapper-modals .modal h4 {
+  font-size: 28px;
+}
 .products .wrapper-modals .modal .close {
   background: none;
   border: none;
