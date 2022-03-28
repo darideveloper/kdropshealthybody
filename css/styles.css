@@ -810,4 +810,68 @@ section.hero .gallery ul li .wrapper-img img.fade {
   }
 }
 
+.faq {
+  position: relative;
+  padding: 50px;
+}
+.faq::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  content: "";
+  background-image: url("../imgs/faq.jpg");
+  z-index: -1;
+}
+.faq .buttons {
+  background-color: rgba(24, 24, 24, 0.8);
+  width: 50%;
+  border-radius: 30px;
+  padding: 30px 0;
+}
+.faq .buttons button {
+  display: block;
+  background: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  margin: 0 30px;
+}
+.faq .buttons button h3, .faq .buttons button svg {
+  transition-duration: 0.5s;
+}
+.faq .buttons button svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  transform: rotateZ(90deg);
+}
+.faq .buttons button:hover h3, .faq .buttons button.open h3 {
+  font-size: 18px;
+}
+.faq .buttons button:hover svg {
+  transform: rotateZ(0deg);
+  width: 25px;
+  height: 25px;
+}
+.faq .buttons button.open svg {
+  transform: rotateZ(-90deg);
+  width: 25px;
+  height: 25px;
+}
+.faq .buttons p {
+  background-color: #181818;
+  padding: 10px 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */
