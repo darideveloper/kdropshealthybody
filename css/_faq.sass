@@ -16,58 +16,92 @@
         background-image: url("../imgs/faq.jpg")
         z-index: -1
 
-    .buttons
-        background-color: rgba($color_d, 0.8)
-        width: 50%
-        border-radius: 30px
-        padding: 30px 0
+    .wrapper-buttons
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin: 0 auto
 
-        button
-            display: block
-            background: none
-            color: white
-            display: flex
-            align-items: center
-            justify-content: flex-start
-            text-align: left
-            border: none
-            cursor: pointer
-            margin: 0 30px
+        .buttons
+            background-color: rgba($color_d, 0.8)
+            width: 650px
+            border-radius: 30px
+            padding: 30px 0
 
-            h3, svg
+            button
+                display: block
+                background: none
+                color: white
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                text-align: left
+                border: none
+                cursor: pointer
+                margin: 0 30px
+
+                h3, svg
+                    transition-duration: 0.5s
+
+                svg
+                    fill: $color_b
+                    width: 20px
+                    height: 20px
+                    min-width: 20px
+                    min-height: 20px
+                    margin-right: 20px
+                    transform: rotateZ(90deg)
+
+
+                &:hover, &.open
+                    h3
+                        font-size: 18px
+
+                &:hover
+                    svg
+                        transform: rotateZ(0deg)
+                        width: 25px
+                        height: 25px
+                    
+
+                &.open
+                    svg
+                        transform: rotateZ(-90deg)
+                        width: 25px
+                        height: 25px
+
+            p
+                background-color: $color_d
+                padding: 10px 20px
                 transition-duration: 0.5s
 
-            svg
-                fill: $color_b
-                width: 20px
-                height: 20px
-                margin-right: 20px
-                transform: rotateZ(90deg)
+                &.colapsed
+                    opacity: 0
+                    height: 0
+                    padding: 0
+                    border: 1px solid red
+                    display: none
 
+    @media screen and (max-width: 1050px)
+        .wrapper-buttons
+            justify-content: center
 
-            &:hover, &.open
-                h3
-                    font-size: 18px
+    @media screen and (max-width: 800px)
+        .wrapper-buttons
+            .buttons
+                width: 100%
+    
+    @media screen and (max-width: 550px)
+        .wrapper-buttons
+            padding: 0
 
-            &:hover
-                svg
-                    transform: rotateZ(0deg)
-                    width: 25px
-                    height: 25px
-                
+            .buttons
+                margin: 0
 
-            &.open
-                svg
-                    transform: rotateZ(-90deg)
-                    width: 25px
-                    height: 25px
+    @media screen and (max-width: 400px)
+        .wrapper-buttons
+            .buttons
+                button
+                    svg
+                        display: none
 
-        p
-            background-color: $color_d
-            padding: 10px 20px
-            transition-duration: 0.5s
-
-            &.colapsed
-                font-size: 0
-                height: 0
-                padding: 0

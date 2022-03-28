@@ -828,13 +828,19 @@ section.hero .gallery ul li .wrapper-img img.fade {
   background-image: url("../imgs/faq.jpg");
   z-index: -1;
 }
-.faq .buttons {
+.faq .wrapper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.faq .wrapper-buttons .buttons {
   background-color: rgba(24, 24, 24, 0.8);
-  width: 50%;
+  width: 650px;
   border-radius: 30px;
   padding: 30px 0;
 }
-.faq .buttons button {
+.faq .wrapper-buttons .buttons button {
   display: block;
   background: none;
   color: white;
@@ -846,38 +852,65 @@ section.hero .gallery ul li .wrapper-img img.fade {
   cursor: pointer;
   margin: 0 30px;
 }
-.faq .buttons button h3, .faq .buttons button svg {
+.faq .wrapper-buttons .buttons button h3, .faq .wrapper-buttons .buttons button svg {
   transition-duration: 0.5s;
 }
-.faq .buttons button svg {
+.faq .wrapper-buttons .buttons button svg {
   fill: #fff;
   width: 20px;
   height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   margin-right: 20px;
   transform: rotateZ(90deg);
 }
-.faq .buttons button:hover h3, .faq .buttons button.open h3 {
+.faq .wrapper-buttons .buttons button:hover h3, .faq .wrapper-buttons .buttons button.open h3 {
   font-size: 18px;
 }
-.faq .buttons button:hover svg {
+.faq .wrapper-buttons .buttons button:hover svg {
   transform: rotateZ(0deg);
   width: 25px;
   height: 25px;
 }
-.faq .buttons button.open svg {
+.faq .wrapper-buttons .buttons button.open svg {
   transform: rotateZ(-90deg);
   width: 25px;
   height: 25px;
 }
-.faq .buttons p {
+.faq .wrapper-buttons .buttons p {
   background-color: #181818;
   padding: 10px 20px;
   transition-duration: 0.5s;
 }
-.faq .buttons p.colapsed {
-  font-size: 0;
+.faq .wrapper-buttons .buttons p.colapsed {
+  opacity: 0;
   height: 0;
   padding: 0;
+  border: 1px solid red;
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .faq .wrapper-buttons {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .faq .wrapper-buttons .buttons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .faq .wrapper-buttons {
+    padding: 0;
+  }
+  .faq .wrapper-buttons .buttons {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .faq .wrapper-buttons .buttons button svg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
