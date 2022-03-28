@@ -821,7 +821,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   opacity: 0.5;
   content: "";
@@ -872,6 +872,12 @@ section.hero .gallery ul li .wrapper-img img.fade {
 .faq .buttons p {
   background-color: #181818;
   padding: 10px 20px;
+  transition-duration: 0.5s;
+}
+.faq .buttons p.colapsed {
+  font-size: 0;
+  height: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
