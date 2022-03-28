@@ -897,6 +897,9 @@ section.hero .gallery ul li .wrapper-img img.fade {
   }
 }
 @media screen and (max-width: 550px) {
+  .faq {
+    padding: 10px;
+  }
   .faq .wrapper-buttons {
     padding: 0;
   }
