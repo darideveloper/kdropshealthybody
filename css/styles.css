@@ -913,4 +913,75 @@ section.hero .gallery ul li .wrapper-img img.fade {
   }
 }
 
+footer {
+  padding-top: 80px;
+}
+footer .columns {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .columns .column {
+  padding: 15px;
+}
+footer .columns .column .logo {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+footer .columns .column h3 {
+  color: rgba(255, 255, 255, 0.3);
+}
+footer .columns .column nav, footer .columns .column ul, footer .columns .column li {
+  margin: 0;
+  padding: 0;
+}
+footer .columns .column li {
+  list-style: none;
+}
+footer .columns .column p, footer .columns .column a {
+  font-size: 12px;
+  display: block;
+  margin: 10px;
+}
+footer .columns .column a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .columns .column a:hover {
+  color: #8C0468;
+}
+footer .columns .column .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .columns .column .icons .icon {
+  margin: 20px 10px;
+}
+footer .columns .column .icons .icon:hover {
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.7));
+}
+footer .columns .column .icons .icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+footer address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C0468;
+  margin-top: 40px;
+}
+footer address p, footer address a {
+  font-size: 10px;
+  color: #fff;
+  margin: 5px;
+}
+footer address p:nth-child(1) {
+  margin-right: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */
