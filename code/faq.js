@@ -2,7 +2,7 @@ const faq_buttons = document.querySelectorAll (".faq button")
 const faq_answers = document.querySelectorAll (".faq p")
 
 for (let faq_button of faq_buttons) {
-    faq_button.addEventListener ("click", function (e) {
+    faq_button.addEventListener ("click", async function (e) {
 
         // Get answer element
         faq_class = faq_button.classList[0]
@@ -23,10 +23,4 @@ for (let faq_button of faq_buttons) {
             faq_button.classList.remove ("open")
         }
     })
-}
-
-function hide_answers () {
-    for (let faq_answer of faq_answers) {
-        faq_answer.classList.add ("colapsed")
-    }
 }

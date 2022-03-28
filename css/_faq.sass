@@ -29,7 +29,7 @@
             padding: 30px 0
 
             button
-                display: block
+                width: calc(100% - 60px)
                 background: none
                 color: white
                 display: flex
@@ -74,13 +74,11 @@
                 background-color: $color_d
                 padding: 10px 20px
                 transition-duration: 0.5s
+                color: rgba($color_b, 0.8)
 
                 &.colapsed
-                    opacity: 0
-                    height: 0
-                    padding: 0
-                    border: 1px solid red
                     display: none
+
 
     @media screen and (max-width: 1050px)
         .wrapper-buttons

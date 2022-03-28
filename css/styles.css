@@ -841,7 +841,7 @@ section.hero .gallery ul li .wrapper-img img.fade {
   padding: 30px 0;
 }
 .faq .wrapper-buttons .buttons button {
-  display: block;
+  width: calc(100% - 60px);
   background: none;
   color: white;
   display: flex;
@@ -881,12 +881,9 @@ section.hero .gallery ul li .wrapper-img img.fade {
   background-color: #181818;
   padding: 10px 20px;
   transition-duration: 0.5s;
+  color: rgba(255, 255, 255, 0.8);
 }
 .faq .wrapper-buttons .buttons p.colapsed {
-  opacity: 0;
-  height: 0;
-  padding: 0;
-  border: 1px solid red;
   display: none;
 }
 @media screen and (max-width: 1050px) {
