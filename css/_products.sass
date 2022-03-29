@@ -11,27 +11,28 @@
         transition-duration: 1s
         cursor: pointer
 
-        &.product1
-            background-image: url("../imgs/product 1 card.jpg")
+        &.btn
+            &.product1
+                background-image: url("../imgs/product 1 card.jpg")
 
-        &.product2
-            background-image: url("../imgs/product 2 card.jpg")
-        
-        &.product3
-            background-image: url("../imgs/product 3 card.jpg")
-        
-        &.product4
-            background-image: url("../imgs/product 4 card.jpg")
+            &.product2
+                background-image: url("../imgs/product 2 card.jpg")
+            
+            &.product3
+                background-image: url("../imgs/product 3 card.jpg")
+            
+            &.product4
+                background-image: url("../imgs/product 4 card.jpg")
 
-        &.product5
-            background-image: url("../imgs/product 5 card.jpg")
+            &.product5
+                background-image: url("../imgs/product 5 card.jpg")
 
-        &.product6
-            background-image: url("../imgs/product 6 card.jpg")
+            &.product6
+                background-image: url("../imgs/product 6 card.jpg")
 
 
-        &:hover
-            background-size: 105% 105%
+            &:hover
+                background-size: 105% 105%
 
     .wrapper-modals
         position: fixed
@@ -40,7 +41,6 @@
         margin: 0
         width: 100%
         height: 100%
-        border: 1px solid red
         display: flex
         align-items: center
         justify-content: center
@@ -48,7 +48,7 @@
         z-index: 2
 
         .modal
-            border: 1px solid red
+            padding: 20px
             width: 80%
             height: 80%
             margin: 0
