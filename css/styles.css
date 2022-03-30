@@ -636,15 +636,20 @@ section.hero .gallery ul li .wrapper-img img.fade {
   color: #8C0468;
 }
 @media screen and (max-width: 1300px) {
-  .products .wrapper-modals .modal .content {
+  .products .wrapper-modal .modal .content {
     display: block;
     overflow-y: scroll;
     height: 90%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  .products .wrapper-modals .modal .content .left .wrapper-img {
+  .products .wrapper-modal .modal .content::-webkit-scrollbar {
+    display: none;
+  }
+  .products .wrapper-modal .modal .content .left .wrapper-img {
     width: 90%;
   }
-  .products .wrapper-modals .modal .content .right {
+  .products .wrapper-modal .modal .content .right {
     overflow-y: visible;
     height: auto;
   }

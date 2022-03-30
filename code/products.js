@@ -1,5 +1,5 @@
 const products_btns = document.querySelectorAll (".products > button.card")
-const products_modals_wrapper = document.querySelector (".products .wrapper-modals")
+const products_modals_wrapper = document.querySelector (".products .wrapper-modal")
 const products_modals = document.querySelectorAll (".products article.modal")
 const products_close_btns = document.querySelectorAll (".products article.modal .close")
 
