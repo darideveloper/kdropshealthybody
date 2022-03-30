@@ -1,0 +1,52 @@
+.countries
+    .modal
+
+        h2
+            font-size: 30px
+            margin-top: 0
+
+        .buttons
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            width: 800px
+            margin: 0 auto
+            max-height: 60vh
+            overflow-y: scroll
+
+            // Hide scroll bar
+            -ms-overflow-style: none
+            scrollbar-width: none
+            &::-webkit-scrollbar
+                display: none
+
+            button
+                background: none
+                border: none
+                color: $color_b
+                padding: 20px
+                cursor: pointer
+
+                h3, p
+                    margin: 0
+                    margin-top: 5px
+
+                h3
+                    font-size: 30px
+
+                img
+                    margin-bottom: 10px
+                    width: 100px
+                    height: auto
+                    transition-duration: $transition-duration
+
+                &:hover
+                    img
+                        width: 120px
+
+            @media screen and (max-width: 850px)
+                grid-template-columns: repeat(2, 1fr)
+                width: 90%
+
+            @media screen and (max-width: 450px)
+                grid-template-columns: repeat(1, 1fr)
+
