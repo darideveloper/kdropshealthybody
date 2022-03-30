@@ -269,12 +269,6 @@ header .inner-header button.menu svg {
     border: none;
     margin-top: 20px;
   }
-  header .inner-header nav ul li:last-child {
-    border: none;
-  }
-  header .inner-header nav ul li:last-child:hover {
-    opacity: 0.8;
-  }
   header .inner-header nav ul li a, header .inner-header nav ul li button {
     margin: 0;
     display: block;

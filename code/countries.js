@@ -3,6 +3,7 @@
 
 var countries_buttons = document.querySelectorAll (".countries .modal .buttons button")
 var countries_modal = document.querySelector (".countries")
+var countries_show_btn = document.querySelector ("header .country")
 
 // Add selectors for countries buttons
 for (let country_button of countries_buttons) {
@@ -18,6 +19,7 @@ for (let country_button of countries_buttons) {
 }
 
 function update_prices () {
+    // Update prices in page for the current country
     
     // Prices
     var prices = {
@@ -50,8 +52,8 @@ function update_prices () {
             "3": "$203,5 Soles"
         },
         "mx": {
-            "1": "$1320 Pesos mxn",
-            "3": "$3.700 Pesos mxn"
+            "1": "$1320 MXN",
+            "3": "$3.700 MXN"
         },
     }
     
@@ -85,5 +87,10 @@ function update_prices () {
         countries_modal.classList.remove('hide')
     }
 }
+
+// Show countries modal
+countries_show_btn.addEventListener ("click", function () {
+    countries_modal.classList.remove ("hide")
+})
 
 update_prices ()

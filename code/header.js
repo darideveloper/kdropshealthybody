@@ -12,7 +12,6 @@ header_menu_button.addEventListener ("click", function (e) {
 // Fix link
 header_menu.addEventListener ("click", function (e) {
     console.log (["li", "use", "svg"].includes (e.target.tagName.toLowerCase()))
-    console.log (e.target.tagName)
 })
 
 // Close menu
