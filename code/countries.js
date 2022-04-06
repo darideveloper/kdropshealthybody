@@ -72,8 +72,6 @@ function update_prices () {
         elems_price_one = document.querySelectorAll(selector_price_one)
         elems_price_three = document.querySelectorAll(selector_price_three)
 
-        console.log (elems_price_one, elems_price_three)
-
         for (elem_price_one of elems_price_one) {
             elem_price_one.innerHTML = current_price_one
         }
