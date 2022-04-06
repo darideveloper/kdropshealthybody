@@ -1,5 +1,5 @@
 // selector variables
-const gallery_slides_content_selector = ".hero .gallery ul li .content"
+const gallery_slides_content_selector = ".hero .gallery .slider .slide-wrapper .content"
 
 var slide_selectors = [
     [
@@ -22,7 +22,7 @@ var slide_selectors = [
 // Nodes variables
 const hero_gallery_next = document.querySelector (".hero .gallery .right")
 const hero_gallery_back = document.querySelector (".hero .gallery .left")
-const gallery_first_image = document.querySelector (".hero .gallery ul li:first-child")
+const gallery_first_image = document.querySelector (".hero .gallery .slider .slide-wrapper:first-child")
 const gallery_slides_content = document.querySelectorAll (gallery_slides_content_selector)
 const gallery_images = ["gallery 1.jpg", "gallery 2.jpg"]
 
