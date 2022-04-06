@@ -1,5 +1,5 @@
 const header_menu_button = document.querySelector ("header button.menu")
-const header_menu_close = document.querySelector ("header li.close")
+const header_menu_close = document.querySelector ("header .close")
 const header_menu = document.querySelector ("header nav")
 
 console.log ()

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/skip-to-content.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
@@ -42,9 +43,6 @@
         <symbol id="svg-credit" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <path d="M22 4h-20c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-12c0-1.104-.896-2-2-2zm0 13.5c0 .276-.224.5-.5.5h-19c-.276 0-.5-.224-.5-.5v-6.5h20v6.5zm0-9.5h-20v-1.5c0-.276.224-.5.5-.5h19c.276 0 .5.224.5.5v1.5zm-9 6h-9v-1h9v1zm-3 2h-6v-1h6v1zm10-2h-3v-1h3v1z"/>
         </symbol>
-        <symbol id="svg-delivery" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
-            <path d="M5 11v1h8v-7h-10v-1c0-.552.448-1 1-1h10c.552 0 1 .448 1 1v2h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.089-.743 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-4c0 1.656-1.344 3-3 3s-3-1.344-3-3h-1c-.552 0-1-.448-1-1v-6h-2v-2h7v2h-3zm3 5.8c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm10 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-3-2.8h-10v2h.765c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h5.53c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h1.765v-4.575l-1.711-2.929c-.179-.307-.508-.496-.863-.496h-4.426v6zm1-5v3h5l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.705zm-16-3h8v2h-8v-2z"/>
-        </symbol>
         <symbol id="svg-data" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <path d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1z"/>
         </symbol>
@@ -82,6 +80,10 @@
             -- Copyright
      -->
 
+    <a class="skip-to-content-link" href="#main">
+        Skip to content
+    </a>
+
     <header>
         <div class="inner-header regular-width">
             <div class="logo wrapper-img">
@@ -89,8 +91,8 @@
             </div>
             <nav class="menu collapsed">
                 <ul>
-                    <li class="close" role="button">
-                        <svg class="icon">
+                    <li>
+                        <svg class="icon close" role="button" aria-label="cerrar menú">
                             <use xlink:href="#svg-close"></use>
                         </svg>
                     </li>
@@ -110,14 +112,14 @@
                         <svg class="icon">
                             <use xlink:href="#svg-question"></use>
                         </svg>
-                        <a href="#faq">Pregntas frecuentes</a>
+                        <a href="#faq">Preguntas frecuentes</a>
                     </li>
                     <li>
-                        <button class="country">Cambiar tienda</button>
+                        <button class="country" aria-label="cambiar país">Cambiar tienda</button>
                     </li>
                 </ul>
             </nav>
-            <button class="menu">
+            <button class="menu" aria-label="mostrar menú">
                 <svg>
                     <use xlink:href="#svg-menu"></use>
                 </svg>
@@ -125,17 +127,17 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero -->
         <section class="hero">
             <div class="gallery">
                 <div class="buttons">
-                    <button class="left">
+                    <button class="left" aria-label="desplazar a imagen siguiente">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
                     </button>
-                    <button class="right">
+                    <button class="right" aria-label="desplazar a imagen anterior">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -153,7 +155,7 @@
                             <a href="#products" class="btn on-white">VER PRODUCTOS</a>
                         </div>
                         <div class="wrapper-img">
-                            <img src="imgs/gallery 1.jpg" alt="gallery image 1">    
+                            <img src="imgs/gallery 1.jpg" alt="imagen de slider 2">    
                         </div>
                     </li>
                     <li>
@@ -166,7 +168,7 @@
                             <a href="#checker" class="btn on-white">VERIFICA</a>
                         </div>
                         <div class="wrapper-img">
-                            <img src="imgs/gallery 2.jpg" alt="gallery image 1">    
+                            <img src="imgs/gallery 2.jpg" alt="imagen de slider 2">    
                         </div>
                     </li>
                 </ul>
@@ -235,9 +237,9 @@
                 </div>
             </div>
             <div class="right" class="card" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
-                <input type="number">
-                <button class="btn" disabled>Buscar</button>
-                <section class="alert" role="alert"> 
+                <input type="number" aria-label="código de producto kdrops">
+                <button class="btn" disabled aria-label="buscar código de producto">Buscar</button>
+                <section class="alert"> 
                     <p class="correct hide">
                         ¡TU PRODUCTO ES ORIGINAL!
                     </p>
@@ -268,7 +270,7 @@
             <!-- Products details -->
             <div class="wrapper-modal hide">
                 <article class="details modal card product1 hide biotin">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -277,7 +279,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 1 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 1 details.jpg" alt="Kdrops biotin">
                             </div>
                             <a href="https://bit.ly/kdbiotin" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -322,7 +324,7 @@
                     </div>
                 </article>
                 <article class="details modal card product2 hide silver">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -331,7 +333,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 2 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 2 details.jpg" alt="Kdrops silver">
                             </div>
                             <a href="https://bit.ly/kdsilver" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -380,7 +382,7 @@
                     </div>
                 </article>
                 <article class="details modal card product3 hide breast">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -389,7 +391,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 3 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 3 details.jpg" alt="Kdrops breast">
                             </div>
                             <a href="https://bit.ly/kdbreast" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -438,7 +440,7 @@
                     </div>
                 </article>
                 <article class="details modal card product4 hide glutex">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -447,7 +449,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 4 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 4 details.jpg" alt="Kdrops glutex">
                             </div>
                             <a href="https://bit.ly/kdglutex" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -496,7 +498,7 @@
                     </div>
                 </article>
                 <article class="details modal card product5 hide classic">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -505,7 +507,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 5 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 5 details.jpg" alt="Kdrops classic">
                             </div>
                             <a href="https://bit.ly/kdclassic" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -553,7 +555,7 @@
                     </div>
                 </article>
                 <article class="details modal card product6 hide muscle">
-                    <button class="close" aria-label="comprar">
+                    <button class="close" aria-label="cerrar">
                         <svg class="icon">
                             <use xlink:href="#svg-close"></use>
                         </svg>
@@ -562,7 +564,7 @@
 
                         <div class="left">
                             <div class="wrapper-img">
-                                <img src="./imgs/product 6 details.jpg" alt="imagen de detalles de producto 1">
+                                <img src="./imgs/product 6 details.jpg" alt="Kdrops muscle">
                             </div>
                             <a href="https://bit.ly/kdmuscle" target="_blank" class="btn">Comprar</a>
                         </div>
@@ -707,11 +709,11 @@
             <div class="wrapper-buttons regular-width" data-aos="fade-down" data-aos-delay="0" data-aos-duration="500">
                 <div class="buttons ">
     
-                    <button class="faq1 faq-button open">
+                    <button class="faq1 faq-button open" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
-                        <h3>
+                        <h3 id="faq1">
                             ¿Dónde están ubicados, son tienda fisica?
                         </h3>
                     </button>
@@ -719,7 +721,7 @@
                         Somos tienda virtual y hacemos envíos a nivel nacional por servientrega y tramaco express.
                     </p>
         
-                    <button class="faq2 faq-button">
+                    <button class="faq2 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -731,7 +733,7 @@
                         No, son productos completamente naturales.
                     </p>
         
-                    <button class="faq3 faq-button">
+                    <button class="faq3 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -743,7 +745,7 @@
                         Si puede combinarlos, solo se puede combinar dos tratamientos de cualquier tipo, solo dos ya que un tercero entorpecería el tratamiento.
                     </p>
         
-                    <button class="faq4 faq-button">
+                    <button class="faq4 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -755,7 +757,7 @@
                         Si, si tu producto no llega o llega partido lo reponemos con uno nuevo. De lo contrario se realizará un reembolso.
                     </p>
         
-                    <button class="faq5 faq-button">
+                    <button class="faq5 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -767,7 +769,7 @@
                         No, el precio incluye el envío.
                     </p>
         
-                    <button class="faq6 faq-button">
+                    <button class="faq6 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -779,7 +781,7 @@
                         Si usted es una persona muy ocupada para hacer ejercicios o simplemente no puede realizar ejercicios físico por alguna razón. Debe usar KDROPS CLASSIC.
                     </p>
         
-                    <button class="faq7 faq-button">
+                    <button class="faq7 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -791,7 +793,7 @@
                         Si hace ejercicio y necesita ayuda adicional para quemar grasa debe usar KDROPS SILVER.
                     </p>
         
-                    <button class="faq8 faq-button">
+                    <button class="faq8 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -803,7 +805,7 @@
                         Por lo general son de 8 a 12kg por mes dependiendo de la genética del usuario, los resultados se ven a partir del mes y medio.
                     </p>
         
-                    <button class="faq9 faq-button">
+                    <button class="faq9 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -815,7 +817,7 @@
                         Si lo puedes utilizar de hecho médicos recomiendan usarlo para mantener los glúteos levantados y firmes incluso funciona muy bien en hombres también.
                     </p>
         
-                    <button class="faq10 faq-button">
+                    <button class="faq10 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -827,7 +829,7 @@
                         Por lo general son de 2 a 3 centímetros por mes dependiendo de la genética del usuario, los resultados se ven a partir del mes y medio.
                     </p>
         
-                    <button class="faq11 faq-button">
+                    <button class="faq11 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -839,7 +841,7 @@
                         Por lo general de 2 a 3 centímetros por mes dependiendo de la genética del usuario, los resultados se ven a partir del mes y medio.
                     </p>
         
-                    <button class="faq12 faq-button">
+                    <button class="faq12 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -851,7 +853,7 @@
                         Si lo puedes utilizar de hecho médicos recomiendan usarlo para mantener los senos firmes como la primera vez.
                     </p>
         
-                    <button class="faq13 faq-button">
+                    <button class="faq13 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -863,7 +865,7 @@
                         22 a 30 Dias.
                     </p>
         
-                    <button class="faq14 faq-button">
+                    <button class="faq14 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -875,7 +877,7 @@
                         Fueron formulados para 3 meses pero se puede tomar hasta por 9 meses seguidos (3 tratamientos).
                     </p>
         
-                    <button class="faq15 faq-button">
+                    <button class="faq15 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -887,7 +889,7 @@
                         Notifícalo por Whatsapp y con gusto te atenderá uno de nuestros agente de ventas.
                     </p>
         
-                    <button class="faq16 faq-button">
+                    <button class="faq16 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -899,7 +901,7 @@
                         Si lo puede usar sin problema ya que el producto no pasa a la leche materna.
                     </p>
         
-                    <button class="faq17 faq-button">
+                    <button class="faq17 faq-button" aria-label="mostrar detalles de pregunta">
                         <svg>
                             <use xlink:href="#svg-arrow"></use>
                         </svg>
@@ -960,20 +962,17 @@
             </div>
             <div class="column navigation" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="500">
                 <h3>Navegación</h3>
-                <nav class="menu collapsed">
-                    <ul>
-                        <li class="menu-option">
-                            <a href="#products">Productos</a>
-                        </li>
-                        <li class="menu-option">
-                            <a href="#buy">Envíos</a>
-                        </li>
-                        <li class="menu-option">
-                            <a href="#faq">Pregntas frecuentes</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                <ul>
+                    <li class="menu-option">
+                        <a href="#products">Productos</a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="#buy">Envíos</a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="#faq">Pregntas frecuentes</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <address>
@@ -990,43 +989,43 @@
         <div class="modal">
             <h2>A continuación elige la tienda de tu preferencia.</h2>
             <div class="buttons">
-                <button class="country co">
+                <button class="country co" aria-label="seleccionar país Colombia">
                     <img src="./imgs/flags/colombia.png" alt="bandera de colombia">
                     <h3>Colombia</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country us">
-                    <img src="./imgs/flags/eeuu.png" alt="bandera de colombia">
+                <button class="country us" aria-label="seleccionar país Estados Unidos">
+                    <img src="./imgs/flags/eeuu.png" alt="bandera de estados unidos">
                     <h3>EEUU</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country ec">
-                    <img src="./imgs/flags/ecuador.png" alt="bandera de colombia">
+                <button class="country ec" aria-label="seleccionar país Ecuador">
+                    <img src="./imgs/flags/ecuador.png" alt="bandera de ecuador">
                     <h3>Ecuador</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country pa">
-                    <img src="./imgs/flags/panama.png" alt="bandera de colombia">
+                <button class="country pa" aria-label="seleccionar país Panamá">
+                    <img src="./imgs/flags/panama.png" alt="bandera de panamá">
                     <h3>Panamá</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country ch">
-                    <img src="./imgs/flags/chile.png" alt="bandera de colombia">
+                <button class="country ch" aria-label="seleccionar país Chile">
+                    <img src="./imgs/flags/chile.png" alt="bandera de chile">
                     <h3>Chile</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country ar">
-                    <img src="./imgs/flags/argentina.png" alt="bandera de colombia">
+                <button class="country ar" aria-label="seleccionar país Argentina">
+                    <img src="./imgs/flags/argentina.png" alt="bandera de argentina">
                     <h3>Argentina</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country pe">
-                    <img src="./imgs/flags/peru.png" alt="bandera de colombia">
+                <button class="country pe" aria-label="seleccionar país Perú">
+                    <img src="./imgs/flags/peru.png" alt="bandera de perú">
                     <h3>Perú</h3>
                     <p>Ir a tienda</p>
                 </button>
-                <button class="country mx">
-                    <img src="./imgs/flags/mexico.png" alt="bandera de colombia">
+                <button class="country mx" aria-label="seleccionar país México">
+                    <img src="./imgs/flags/mexico.png" alt="bandera de méxico">
                     <h3>México</h3>
                     <p>Ir a tienda</p>
                 </button>

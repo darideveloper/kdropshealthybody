@@ -34,6 +34,7 @@ check_input.addEventListener ("keyup", function (e) {
 // Detect click in submit button
 check_btn.addEventListener ("click", function (e) {
     validate_check_number ()  
+    check_alert.setAttribute ("role", "alert")
 })
 
 function validate_check_number () {
