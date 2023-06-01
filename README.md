@@ -18,7 +18,7 @@
 
 Visit at: **[darideveloper.github.io/kdropshealthybody](https://darideveloper.github.io/kdropshealthybody/)**
 
-Landing page (in spanish) for products \\\"Kdrops\\\", with scroll animation, hover animation and responsive.
+Landing page (in spanish) for products "Kdrops", with scroll animation, hover animation and responsive.
 
 Start date: **2021-03-24**
 
@@ -45,26 +45,26 @@ Project type: **client's project**
 
 # Details
 
-The landing page includes the following sections: \r
-\r
-* Header\r
-* Hero (slider)\r
-* About us\r
-* Products\r
-* Buy process\r
-* Testimonials\r
-* FAQ\r
-* Contact banner\r
+The landing page includes the following sections: 
+
+* Header
+* Hero (slider)
+* About us
+* Products
+* Buy process
+* Testimonials
+* FAQ
+* Contact banner
 * Footer
 
 # Roadmap
 
-* [X] Layout\r
-* [X] Slider hero with timed animations\r
-* [X] Animations on scroll\r
-* [X] Hover animations\r
-* [X] Responsive\r
-* [X] Contact links\r
+* [X] Layout
+* [X] Slider hero with timed animations
+* [X] Animations on scroll
+* [X] Hover animations
+* [X] Responsive
+* [X] Contact links
 * [X] Product code validation
 
 
